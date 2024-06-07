@@ -1,0 +1,11 @@
+.card{
+    background-color: rgba(89, 175, 105, 0.268);
+}
+.delete{
+    display: flex;
+    justify-content: end;
+}
+.cb{
+    height: 25px;
+    width: 25px;
+}
