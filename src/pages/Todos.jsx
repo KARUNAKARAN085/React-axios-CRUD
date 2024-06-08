@@ -64,28 +64,28 @@ const Todos = () => {
 
   return (
     <div className="container">
-      <h1 className="title text-success">Todo List</h1>
+      <h1 className="title text-success">React Axios Task</h1>
 
       <form onSubmit={handleCreateTodo} className="form rounded border px-3 py-5">
         <div className="td">
           <label className="form-group ms-3 me-1 text-success" htmlFor="title">
-            Title:
+            Name:
           </label>
           <input
             className="form-control me-4"
             type="text"
-            placeholder="Todo title..."
+            placeholder="Enter Name..."
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
 
           <label className="form-group me-1 text-success" htmlFor="title">
-            Description:
+            Username:
           </label>
           <input
             className="form-control me-4"
             type="text"
-            placeholder="Todo description..."
+            placeholder="Enter Username..."
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
@@ -101,10 +101,10 @@ const Todos = () => {
           <option value={true}>Completed</option>
         </select>
 
-        <button className="btn btn-success" type="submit">Add Todo</button>
+        <button className="btn btn-success px-4" type="submit">Add</button>
         </div>
       </form>
-      <div className="title1 text-success">My Todos</div>
+      <div className="title1 text-success">Cards</div>
       <div className="todoc">
       {todos.map((todo) => (
         <TodoItem
